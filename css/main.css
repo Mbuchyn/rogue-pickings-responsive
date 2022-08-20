@@ -1,0 +1,274 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-size: 1em;
+	padding: 0 1em;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 1.3em;
+    padding: 0 1.875em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header h1 {
+	padding: 1em 0.5em 0;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	width: 90%
+}
+header h1 span {
+	color: #77a466;
+	padding-right: .5em;
+}
+
+header nav {
+	justify-content: center;
+	align-content: center;
+	padding: 2em 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding:  0.625em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 2.5em;
+
+	
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.main-image {
+	height: auto;
+	
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 0.3125em 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	
+}
+
+
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-one h3,
+.section-two h3,
+.section-three h3 {
+	padding: 0.625em 1.875em;
+}
+
+.menu {
+	list-style: none;
+	padding: 0.3em auto;
+}
+.menu li {
+	padding: 0.4em 0;
+	color:#77a466;
+	
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 90%;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-flow: row wrap;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+	.container {
+		margin: 0 1em;
+		width: 100%;
+	}
+
+	.main-title p {
+		padding: 0;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+	 
+	.bottom-section {
+		display: flex;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-one,
+    .section-two,
+    .section-three {
+		width: 33%;
+		height: 100%;
+}
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
+	.container {
+		width: 100%;
+	}
+
+	header {
+		justify-content: space-between;
+		width: 100%;
+	}
+	header h1 {
+		width: 100%;
+		display: inline;
+		padding: 0;
+		border: none;
+	}
+
+	header nav {
+		display: inline-block;
+		align-self: flex-end;
+		margin-left: 20em;
+	}
+ 
+	header nav ul li {
+		display: inline;
+	}
+	.bottom-section {
+		width: 100%;
+	}
+
+	.section-one,
+    .section-two,
+    .section-three {
+		padding: 0.2em auto;
+		text-align: left;
+	}
+
+	.section-one h3,
+.section-two h3,
+.section-three h3 {
+	padding: 0.5em;S
+	text-align: left;
+}
+
+	footer { 
+		justify-content: left;
+		text-align: left;
+	}
+}
